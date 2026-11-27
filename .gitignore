@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+vendor/
+backend/vendor/
+frontend/node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env.local
+
+# Build output
+dist/
+frontend/dist/
+backend/public/build/
+backend/public/storage/
+
+# Databases
+*.sqlite
+*.sqlite3
+backend/database/*.sqlite
+backend/database/*.sqlite-journal
+
+# Logs & Cache
+*.log
+backend/storage/logs/
+backend/bootstrap/cache/*
+!backend/bootstrap/cache/.gitignore
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+
+# Uploaded storage files (keep directory structure)
+backend/storage/app/public/gallery/*
+!backend/storage/app/public/gallery/.gitignore
+
+# IDE & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
